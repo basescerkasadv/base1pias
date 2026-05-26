@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Jurídica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Agenda da Advocacia</h1>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Novo Compromisso</h2>
+
+      <input type="text" id="titulo" placeholder="Título">
+      <input type="datetime-local" id="data">
+      <textarea id="descricao" placeholder="Descrição"></textarea>
+
+      <button onclick="criarCompromisso()">Salvar</button>
+    </section>
+
+    <section>
+      <h2>Compromissos</h2>
+      <div id="lista"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
